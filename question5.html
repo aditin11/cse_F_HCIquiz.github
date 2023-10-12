@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ</title>
+    <script>
+        function result4()
+        {
+           var ele;
+            ele=document.getElementsByName('capital');
+           for(i=0;i<ele.length;i++)
+           {
+                    if(ele[i].checked)
+                    {
+            if(ele[i].value=="SweetCorn")
+            {
+                document.getElementById("res4").innerHTML="Correct";
+            }
+            else
+            {
+                document.getElementById("res4").innerHTML="InCorrect";
+            }
+           }
+           }
+    }
+    
+</script>
+</head>
+<body>
+    <center> <h1>WELCOME TO QUIZ</h1></center>
+    <h2>All the Questions Carry Equal Marks</h2>
+    <p><h4>5. What is aditi's favorite food?</h4></p>
+    <input type="radio" name="capital" value="SweetCorn">SweetCorn<br>
+    <input type="radio" name="capital" value="Samosa">Samosa<br>
+    <input type="radio" name="capital" value="WhiteSauce Pasta">WhiteSauce Pasta<br>
+    <input type="radio" name="capital" value="FrenchFries">French Fries
+   <br><br> <input type="button" value="SUBMIT" onclick="result4()">
+   <div id="res4"></div>
+</body>
+</html>

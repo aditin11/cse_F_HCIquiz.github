@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ</title>
+    <script>
+        function result1()
+        {
+           var ele;
+            ele=document.getElementsByName('no');
+           for(i=0;i<ele.length;i++)
+           {
+                    if(ele[i].checked)
+                    {
+            if(ele[i].value=="8")
+            {
+                document.getElementById("res1").innerHTML="Correct";
+            }
+            else
+            {
+                document.getElementById("res1").innerHTML="InCorrect";
+            }
+           }
+           }
+    }
+</script>
+</head>
+<body>
+    <center> <h1>WELCOME TO QUIZ</h1></center>
+    <h2>All the Questions Carry Equal Marks</h2>
+    <p><h4>2. What is the Semesters are in BTech?</h4></p>
+    <input type="radio" name="no" value="3">2<br>
+    <input type="radio" name="no" value="6">6<br>
+    <input type="radio" name="no" value="10">10<br>
+    <input type="radio" name="no" value="8">8
+   <br><br> <input type="button" value="SUBMIT" onclick="result1()">
+   <div id="res1"></div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ</title>
+    <script>
+        function result()
+        {
+           var ele;
+            ele=document.getElementsByName('capital');
+           for(i=0;i<ele.length;i++)
+           {
+                    if(ele[i].checked)
+                    {
+            if(ele[i].value=="Seoul")
+            {
+                document.getElementById("res").innerHTML="Correct";
+            }
+            else
+            {
+                document.getElementById("res").innerHTML="InCorrect";
+            }
+           }
+           }
+    }
+
+   
+    </script>
+</head>
+<body>
+    <center> <h1>WELCOME TO QUIZ</h1></center>
+    <h2>All the Questions Carry Equal Marks</h2>
+    <p><h4>1. What is the Capital of South Korea?</h4></p>
+    <input type="radio" name="capital" value="Busan">Busan<br>
+    <input type="radio" name="capital" value="Seoul">Seoul<br>
+    <input type="radio" name="capital" value="Daegu">Daegu<br>
+    <input type="radio" name="capital" value="Jeju">Jeju
+   <br><br> <input type="button" value="SUBMIT" onclick="result()">
+   <div id="res"></div>
+
+   
+</body>
+</html>

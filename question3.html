@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ</title>
+    <script>
+         function result2()
+        {
+           var ele;
+            ele=document.getElementsByName('capital');
+           for(i=0;i<ele.length;i++)
+           {
+                    if(ele[i].checked)
+                    {
+            if(ele[i].value=="Hyderabad")
+            {
+                document.getElementById("res2").innerHTML="Correct";
+            }
+            else
+            {
+                document.getElementById("res2").innerHTML="InCorrect";
+            }
+           }
+           }
+    }
+</script>
+</head>
+<body>
+    <center> <h1>WELCOME TO QUIZ</h1></center>
+    <h2>All the Questions Carry Equal Marks</h2>
+    <p><h4>3. What is the Capital of Telangana?</h4></p>
+    <input type="radio" name="capital" value="Banglore">Banglore<br>
+    <input type="radio" name="capital" value="Hyderabad">Hyderabad<br>
+    <input type="radio" name="capital" value="Warangal">Warangal<br>
+    <input type="radio" name="capital" value="Mumbai">Mumbai
+   <br><br> <input type="button" value="SUBMIT" onclick="result2()">
+   <div id="res2"></div>
+</body>
+</html>
